@@ -11,3 +11,5 @@ practical use of decorators can be, for example, for timing, logging, error chec
 See `example1` for an implementation of chained decorators with or without arguments.
 
 See `example2` for a practical example of a function call log implemented via decorators.
+
+Also see `https://youtu.be/XX6_2u_TbQw` if you feel you need a terribly slow and boring video walkthrough in Pig English ;)

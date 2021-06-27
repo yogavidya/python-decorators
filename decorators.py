@@ -30,7 +30,7 @@ def example1():
     def outer_dec(f): # wrapper 1: arguments from enclosing dec, receives function
       def outer_dec_wrapper(*args, **kwargs): # wrapper 2: receives function args
         result = []
-        for i in range(n):
+        for _ in range(n):
           result.append(f(*args, **kwargs))
         return 'outer_dec ' + str(result)
       return outer_dec_wrapper
@@ -47,9 +47,9 @@ def example1():
   @outer_dec(2)
   @inner_dec
   def my_f(n):
-    return(f'f = {n}')
+    return(f'my_f = {n}')
 
-  print(f'doc_dec: {my_f.__doc__}')
+  print(f'Docstring for my_f: {my_f.__doc__}')
   print(my_f(42))
 
 def example2():
@@ -96,8 +96,9 @@ def example2():
   def target_fn_except(a, b):
     return a / b
   
-  target_fn()
-  target_fn_except(1,0)
+  print(target_fn())
+  print(target_fn_except(1,1))
+  print(target_fn_except(1,0))
   
 example1()
 example2()
