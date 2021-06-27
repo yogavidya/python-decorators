@@ -1,0 +1,7 @@
+Include
+Lib
+Scripts
+pyvenv.cfg
+functions.log
+*.code-workspace
+
